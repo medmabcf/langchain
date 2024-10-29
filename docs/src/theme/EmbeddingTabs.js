@@ -15,7 +15,7 @@ export default function EmbeddingTabs(props) {
     } = props;
   
     const openAIParamsOrDefault = openaiParams ?? `model="text-embedding-3-large"`;
-    const huggingFaceParamsOrDefault = huggingFaceParams ?? `model="sentence-transformers/all-mpnet-base-v2"`;
+    const huggingFaceParamsOrDefault = huggingFaceParams ?? `model_name="sentence-transformers/all-mpnet-base-v2"`;
     const fakeEmbeddingParamsOrDefault = fakeEmbeddingParams ?? `size=4096`;
   
     const embeddingVarName = customVarName ?? "embeddings";
